@@ -35,3 +35,11 @@ const quotes = [{
 	person: ` Ibn-Khaldun`
 }, ];
 
+btn.addEventListener("click", function() {
+
+	let random_quote = Math.floor(Math.random() * quotes.length);
+
+	quote.innerText = quotes[random_quote].quote;
+	person.innerText = quotes[random_quote].person;
+
+})
